@@ -23,7 +23,7 @@ fun main() {
 // TODO\
 fun String.getFirstAndLast(): Map<String, Char>{
     return mapOf(
-        "first" to this.get(0),
-        "last" to this.get(this.length - 1)
+        "first" to this[0],
+        "last" to this[this.length - 1]
     )
 }
