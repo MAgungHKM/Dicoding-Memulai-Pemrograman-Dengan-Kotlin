@@ -27,5 +27,8 @@ fun main() = runBlocking {
     val resultMultiple = async { multiple(20, 20) }
 
     // TODO 3
-    println("Result sum: ${resultSum.await()}\nResult multiple: ${resultMultiple.await()}")
+    println("""
+        Result sum: ${resultSum.await()}
+        Result multiple: ${resultMultiple.await()}
+    """.trimIndent())
 }
